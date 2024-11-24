@@ -1,0 +1,19 @@
+# Build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Logs
+*.log
+
+# IDE-specific settings
+.vscode/
+.vs/
+
+# Compiled files
+*.dll
+*.exe
+*.pdb
