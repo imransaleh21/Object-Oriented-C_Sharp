@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace C__Oops
 {
@@ -10,32 +6,48 @@ namespace C__Oops
     {
         static void Main(string[] args)
         {
-            Person personObj = new Person();
+            Encapsulation Obj = new Encapsulation();
 
-            personObj.name = "Iman Saleh";
-            personObj.age = 24;
+            Obj.SetData("Iman Saleh",300000.00,25);
+            Obj.print();
 
-            personObj.print();
-
-            personObj.name = "Hasan Mahmud";
-            personObj.age = 26;
-            personObj.print();
+            Obj.SetData("Salman Khan",250000.00);
+            Console.WriteLine("Name: "+Obj.GetName());
 
             Console.ReadLine();
 
         }
     }
 
-    class Person
+    class Encapsulation
     {
-        public string name = "sdsd";
-        public int age;
+        private static string name;
+        private static int age;
+        private static double salary;
 
+        public void SetData(string n, double s, int a = 0) //writable
+        {
+            name = n;
+            age = a;
+            salary = s;
+        }
+
+        public string GetName() //readable
+        {
+            return name;
+        }
+
+        public double GetSalary() //readable
+        {
+            return salary;
+        }
 
         public void print()
         {
-            Console.WriteLine("My name is: "+name);
-            Console.WriteLine("Age: "+age);
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Age: " + age);
+            Console.WriteLine("Salary: " + salary);
+            Console.WriteLine();
         }
     }
 }
