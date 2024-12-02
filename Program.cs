@@ -8,14 +8,31 @@ namespace C__Oops
         {
             Encapsulation Obj = new Encapsulation();
 
-            Obj.SetData("Iman Saleh",300000.00,25);
-            Obj.print();
+            //Obj.SetData("Iman Saleh",300000.00,25);
+            //Obj.print();
 
-            Obj.SetData("Salman Khan",250000.00);
-            Console.WriteLine("Name: "+Obj.GetName());
+            //Obj.SetData("Salman Khan",250000.00);
+            //Console.WriteLine("Name: "+Obj.GetName());
+
+            GetSetProperties Obj1 = new GetSetProperties();
+            //Obj1.Name = "Imran Saleh"; // Read Only properties
+            Obj1.Age = 25;
+            Obj1.Salary = 35000.50;
+            ParentPrint(Obj1);
+
+            Obj1.Age = 24;
+            Obj1.Salary = 30000.00;
+            ParentPrint(Obj1);
 
             Console.ReadLine();
+        }
 
+        static void ParentPrint(GetSetProperties Obj1)
+        {
+            Console.WriteLine("Name: " + Obj1.Name);
+            //Console.WriteLine("Age: "+Obj1.Age); //write only properties. Cannot Read
+            Console.WriteLine("Salary: " + Obj1.Salary);
+            Console.WriteLine();
         }
     }
 
