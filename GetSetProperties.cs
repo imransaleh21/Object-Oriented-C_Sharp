@@ -10,6 +10,7 @@ namespace C__Oops
     {
         // below code line is for Read only properties 
         public string Name { get; } = "Imran Saleh";
+        public readonly int ID = 4;
 
         private int age;
         public int Age

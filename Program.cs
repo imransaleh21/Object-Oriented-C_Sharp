@@ -16,6 +16,8 @@ namespace C__Oops
 
             GetSetProperties Obj1 = new GetSetProperties();
             //Obj1.Name = "Imran Saleh"; // Read Only properties
+            //Obj1.ID = 5; read only
+
             Obj1.Age = 25;
             Obj1.Salary = 35000.50;
             ParentPrint(Obj1);
@@ -23,12 +25,12 @@ namespace C__Oops
             Obj1.Age = 24;
             Obj1.Salary = 30000.00;
             ParentPrint(Obj1);
-
             Console.ReadLine();
         }
 
         static void ParentPrint(GetSetProperties Obj1)
         {
+            //Console.WriteLine("ID: "+ Obj1.ID);
             Console.WriteLine("Name: " + Obj1.Name);
             //Console.WriteLine("Age: "+Obj1.Age); //write only properties. Cannot Read
             Console.WriteLine("Salary: " + Obj1.Salary);
