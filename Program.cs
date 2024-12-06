@@ -25,6 +25,9 @@ namespace C__Oops
             Obj1.Age = 24;
             Obj1.Salary = 30000.00;
             ParentPrint(Obj1);
+
+            Jagged_array Obj2 = new Jagged_array();
+
             Console.ReadLine();
         }
 
