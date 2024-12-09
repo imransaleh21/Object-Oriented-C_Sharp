@@ -6,7 +6,7 @@ namespace C__Oops
     {
         static void Main(string[] args)
         {
-            Encapsulation Obj = new Encapsulation();
+            Encapsulation Obj = new Encapsulation();               // encapsulation class
 
             //Obj.SetData("Iman Saleh",300000.00,25);
             //Obj.print();
@@ -14,7 +14,7 @@ namespace C__Oops
             //Obj.SetData("Salman Khan",250000.00);
             //Console.WriteLine("Name: "+Obj.GetName());
 
-            GetSetProperties Obj1 = new GetSetProperties();
+            GetSetProperties Obj1 = new GetSetProperties();       // Get Set method class
             //Obj1.Name = "Imran Saleh"; // Read Only properties
             //Obj1.ID = 5; read only
 
@@ -26,7 +26,13 @@ namespace C__Oops
             Obj1.Salary = 30000.00;
             ParentPrint(Obj1);
 
-            Jagged_array Obj2 = new Jagged_array();
+            Jagged_array Obj2 = new Jagged_array();              //Jagged Array class
+            params_as_method_parameter Obj3 = new params_as_method_parameter();
+            Obj3.sum();
+            Obj3.sum(1);
+            Obj3.sum(1,2,3);
+            Obj3.sum(1,2,3,4,5,6,7,8,9);
+            Console.WriteLine();
 
             Console.ReadLine();
         }

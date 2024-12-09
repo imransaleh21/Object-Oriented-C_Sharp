@@ -24,6 +24,7 @@ namespace C__Oops
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
 
 
         }
