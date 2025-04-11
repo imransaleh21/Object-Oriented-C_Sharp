@@ -46,6 +46,7 @@
     <Compile Include="GetSetProperties.cs" />
     <Compile Include="Jagged array.cs" />
     <Compile Include="params as method parameter.cs" />
+    <Compile Include="Static Constractor Calling with other Constractor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
