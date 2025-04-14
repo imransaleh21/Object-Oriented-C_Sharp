@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="GetSetProperties.cs" />
     <Compile Include="Jagged array.cs" />
+    <Compile Include="Nested_Class_and_there_inheritance.cs" />
     <Compile Include="params as method parameter.cs" />
     <Compile Include="Static Constractor Calling with other Constractor.cs" />
     <Compile Include="Program.cs" />

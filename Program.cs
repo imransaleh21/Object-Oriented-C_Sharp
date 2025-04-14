@@ -36,6 +36,14 @@ namespace C__Oops
 
             new Access_Static_Constractor(); // call the constractor of the class
 
+            // the below code is for nested class
+            Console.WriteLine();
+            Vehicle vehicle = new Vehicle();
+            Vehicle.Bike bike = new Vehicle.Bike();
+            bike.ShowWheel();
+            Vehicle.Bus bus = new Vehicle.Bus();
+            bus.ShowWheel();
+
             Console.ReadLine();
         }
 

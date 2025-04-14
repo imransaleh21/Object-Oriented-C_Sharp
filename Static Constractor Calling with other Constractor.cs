@@ -31,7 +31,7 @@ namespace C__Oops
     {
         internal Access_Static_Constractor()
         {
-            //Static_Constractor_Call SCC = new Static_Constractor_Call();
+            Static_Constractor_Call SCC = new Static_Constractor_Call();
             // if we do not create any object then only the value of static constractor will assign
             Static_Constractor_Call.numberShow(); 
         }
