@@ -44,6 +44,10 @@ namespace C__Oops
             Vehicle.Bus bus = new Vehicle.Bus();
             bus.ShowWheel();
 
+            //sealed function
+            MiniBus miniBus = new MiniBus();
+            miniBus.VehicleName("MiniBus");
+
             Console.ReadLine();
         }
 
