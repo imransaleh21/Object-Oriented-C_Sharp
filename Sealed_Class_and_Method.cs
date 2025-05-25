@@ -23,7 +23,7 @@ namespace C__Oops
     {
         internal virtual void VehicleName(string name) 
         {
-            Console.WriteLine("Name of the Vehicle is "+name);
+            Console.WriteLine("Name of the Vehicle Iz "+name);
         }
     }
 
@@ -31,6 +31,7 @@ namespace C__Oops
     {
         internal sealed override void VehicleName(string name) //this method cann't override further
         {
+            //base.VehicleName(name);
             Console.WriteLine("\nName of the Vehicle is " + name);
         }
     }
